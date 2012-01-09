@@ -1,6 +1,14 @@
 QlapWeblog::Application.routes.draw do
   root :to => 'pages#home'
 
+  # Posts controller
+  resources :posts
+  # The above line is equivalent to the following:
+  # => get "posts/#show" => /posts/:id
+  # => get "posts/#"
+
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
