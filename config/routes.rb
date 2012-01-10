@@ -4,7 +4,7 @@ QlapWeblog::Application.routes.draw do
   # Posts controller
   resources :posts
   # The above line is equivalent to the following:
-  # => get "posts/#show" => /posts/:id
+  # => get "posts/#show" => /posts/show/:id
   # => get "posts/#"
 
 
