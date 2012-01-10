@@ -19,4 +19,8 @@ class PostsController < ApplicationController
 			render new_post_path
 		end
 	end
+
+	def edit
+		@post = Post.find(params[:id])
+	end
 end
