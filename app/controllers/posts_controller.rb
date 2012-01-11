@@ -5,7 +5,6 @@ class PostsController < ApplicationController
 
 	def show
 		@post = Post.find(params[:id])
-		@params = params
 	end
 
 	def new
