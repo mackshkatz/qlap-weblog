@@ -1,13 +1,10 @@
 class PostsController < ApplicationController
 
 	def index
-		@posts = Post.all
-		#@posts = Post.all(:order => "title") This worked, but sorted the uppercase to be ahead of lowercase.
-
-		# @posts.order("title")
-		@posts.sort! do |a,b|
-			a.title.downcase <=> b.title.downcase
-		end
+		@posts = Post.all(:order => "title")
+		# @posts.sort! do |a,b|
+		# 	a.title.downcase <=> b.title.downcase
+		# end
 	end
 
 	def show
