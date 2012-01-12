@@ -5,6 +5,7 @@ class PostsController < ApplicationController
 		# @posts.sort! do |a,b|
 		# 	a.title.downcase <=> b.title.downcase
 		# end
+		# ^ This way worked using the ruby method sort!, but a more efficient way is to create your custom SQL query using the :order option.
 	end
 
 	def show
