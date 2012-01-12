@@ -1,4 +1,7 @@
 class PostsController < ApplicationController
+
+	# http_basic_authenticate_with :username => "quickleft", :password => "max"
+
 	def index
 		@posts = Post.all
 	end
@@ -31,6 +34,15 @@ class PostsController < ApplicationController
 			redirect_to posts_path
 		else
 			render edit_post_path
+		end
+	end
+
+	def destroy
+		@post = Post.find(params[:id])
+		if @post.destroy
+			redirect_to posts_path
+		else
+			render post_path
 		end
 	end
 end
