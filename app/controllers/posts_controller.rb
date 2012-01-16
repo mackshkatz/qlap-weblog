@@ -6,6 +6,15 @@ class PostsController < ApplicationController
 		# 	a.title.downcase <=> b.title.downcase
 		# end
 		# ^ This way worked using the ruby method sort!, but a more efficient way is to create your custom SQL query using the :order option.
+		
+
+		# if params[:whatever]
+		# 	@posts = dadajdjadj
+		# elsif params[:random]
+		# 	@posts = Post.find(:first, :order => 'RAND()')
+		# else
+		# 	@posts = Post.all(:order => "title")
+		# end
 	end
 
 	def show

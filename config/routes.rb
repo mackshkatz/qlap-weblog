@@ -2,6 +2,7 @@ QlapWeblog::Application.routes.draw do
   root :to => 'pages#home'
   get 'pages/contact'
 
+  # match '/clients/:whatever' => 'posts#index'
 
   # Posts controller
   resources :posts
