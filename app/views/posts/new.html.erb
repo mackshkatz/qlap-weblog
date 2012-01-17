@@ -1,5 +1,9 @@
+<h2>New Post</h2>
+
 <%= form_for @post, :url => { :action => "create" } do |f| %>
+	<%= label_tag :title, "Title" %>
 	<%= f.text_field :title %>
-	<%= f.text_field :content %>
+	<%= label_tag :description, "Description" %>
+	<%= f.text_area :content %>
 	<%= f.submit "Submit" %>
 <% end %>
