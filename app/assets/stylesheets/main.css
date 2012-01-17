@@ -56,7 +56,7 @@ header li a {
 	padding-top: 35px;
 	font-size: 14px;
 	line-height: 26px;
-	color: #666;
+	-webkit-transition: color 2s ease-in;
 }
 
 header li + li a {
@@ -100,11 +100,13 @@ input[type="submit"] {
 
 input[type="text"] {
 	margin-bottom: 18px;
+	font-size: 20px;
 }
 
 textarea {
 	width: 100%;
 	margin-bottom: 18px;
+	font-size: 20px;
 }
 
 .post-actions {
