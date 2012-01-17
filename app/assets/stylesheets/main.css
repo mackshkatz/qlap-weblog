@@ -78,6 +78,7 @@ header li + li a {
 	clear: both;
 	border: 1px solid black;
 	padding: 38px;
+	border-radius: 5px;
 }
 
 .blog-posts {
