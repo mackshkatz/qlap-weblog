@@ -1,124 +1,90 @@
 body {
-	font-family: 'verdana', sans-serif;
-	color: #666;
-}
+  font-family: 'verdana', sans-serif;
+  color: #666; }
 
 a {
-	text-decoration: none;
-	color: #666;
-}
-
-a:hover {
-	color: #0099ff;
-}
+  text-decoration: none;
+  color: #666; }
+  a:hover {
+    color: #0099ff; }
 
 h2 {
-	font-size: 25px;
-	margin: 0;
-	padding: 0 0 70px 0;
-	color: #000;
-}
+  font-size: 25px;
+  margin: 0;
+  padding: 0 0 70px 0;
+  color: #000; }
+  h2 span {
+    display: block;
+    font-size: 12px; }
 
-h2 span {
-	display: block;
-	font-size: 12px;
-}
 #container {
-	width: 960px;
-	margin: 0 auto;
-}
+  width: 960px;
+  margin: 0 auto; }
 
 header {
-	overflow: hidden;
-}
-
-header h1 {
-	float: left;
-	font-size: 38px;
-	-webkit-transform: rotate(-10deg);
-}
-
-header nav {
-	float: right;
-}
-
-header nav ul {
-	overflow: hidden;
-}
-
-header li {
-	float: left;
-	list-style-type: none;
-}
-
-header li a {
-	display: block;
-	padding-top: 35px;
-	font-size: 14px;
-	line-height: 26px;
-	-webkit-transition: color 2s ease-in;
-}
-
-header li + li a {
-	margin-left: 70px;
-}
+  overflow: hidden; }
+  header h1 {
+    float: left;
+    font-size: 38px;
+    -webkit-transform: rotate(-10deg); }
+  header nav {
+    float: right; }
+    header nav ul {
+      overflow: hidden; }
+  header li {
+    float: left;
+    list-style-type: none; }
+    header li a {
+      display: block;
+      padding-top: 35px;
+      font-size: 14px;
+      line-height: 26px;
+      -webkit-transition: color 2s ease-in; }
+    header li + li a {
+      margin-left: 70px; }
 
 .home a {
-	background: url(qlap-weblog-sprite.png) 50% -55px;
-}
+  background: url(qlap-weblog-sprite.png) 50% -55px; }
 
 .posts a {
-	background: url(qlap-weblog-sprite.png) 50% -134px;
-}
+  background: url(qlap-weblog-sprite.png) 50% -134px; }
 
 .contact a {
-	background: url(qlap-weblog-sprite.png) 50% -213px;
-}
+  background: url(qlap-weblog-sprite.png) 50% -213px; }
 
 .content {
-	clear: both;
-	border: 1px solid black;
-	padding: 38px;
-	border-radius: 5px;
-	background: -webkit-linear-gradient(top, #efefef 0%,#ffffff 100%);
-	background: linear-gradient(top, #efefef 0%,#ffffff 100%);
-}
+  clear: both;
+  border: 1px solid black;
+  padding: 38px;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(top, #efefef 0%, white 100%);
+  background: linear-gradient(top, #efefef 0%, white 100%); }
 
 .blog-posts {
-	padding-top: 50px;
-}
+  padding-top: 50px; }
 
 label {
-	display: block;
-	font-size: 25px;
-	margin-bottom: 18px;
-}
+  display: block;
+  font-size: 25px;
+  margin-bottom: 18px; }
 
 input[type="submit"] {
-	display: block;
-}
+  display: block; }
 
 input[type="text"] {
-	margin-bottom: 18px;
-	font-size: 20px;
-}
+  margin-bottom: 18px;
+  font-size: 20px; }
 
 textarea {
-	width: 100%;
-	margin-bottom: 18px;
-	font-size: 20px;
-}
+  width: 100%;
+  margin-bottom: 18px;
+  font-size: 20px; }
 
 .post-actions {
-	float: right;
-}
-
-.post-actions a {
-	display: block;
-	float: left;
-	padding: 0 5px 5px 5px;
-}
-
-.post-actions a + a {
-	margin-left: 20px;
-}
+  float: right; }
+  .post-actions a {
+    display: block;
+    float: left;
+    padding: 0 5px 5px 5px; }
+    .post-actions a + a {
+      margin-left: 20px; }

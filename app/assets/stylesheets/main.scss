@@ -1,0 +1,117 @@
+body {
+	font-family: 'verdana', sans-serif;
+	color: #666;
+}
+
+a {
+	text-decoration: none;
+	color: #666;
+	&:hover {
+		color: #0099ff;
+	}
+}
+
+h2 {
+	font-size: 25px;
+	margin: 0;
+	padding: 0 0 70px 0;
+	color: #000;
+	span {
+		display: block;
+		font-size: 12px;
+	}
+}
+#container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+header {
+	overflow: hidden;
+	h1 {
+		float: left;
+		font-size: 38px;
+		-webkit-transform: rotate(-10deg);
+	}
+	nav {
+		float: right;
+		ul {
+			overflow: hidden;
+		}
+	}
+	li {
+		float: left;
+		list-style-type: none;
+		a {
+			display: block;
+			padding-top: 35px;
+			font-size: 14px;
+			line-height: 26px;
+			-webkit-transition: color 2s ease-in;
+		}
+		+ li {
+			a {
+				margin-left: 70px;
+			}
+		}
+	}
+}
+
+.home a {
+	background: url(qlap-weblog-sprite.png) 50% -55px;
+}
+
+.posts a {
+	background: url(qlap-weblog-sprite.png) 50% -134px;
+}
+
+.contact a {
+	background: url(qlap-weblog-sprite.png) 50% -213px;
+}
+
+.content {
+	clear: both;
+	border: 1px solid black;
+	padding: 38px;
+	border-radius: 5px;
+	background: -webkit-linear-gradient(top, #efefef 0%,#ffffff 100%);
+	background: linear-gradient(top, #efefef 0%,#ffffff 100%);
+}
+
+.blog-posts {
+	padding-top: 50px;
+}
+
+label {
+	display: block;
+	font-size: 25px;
+	margin-bottom: 18px;
+}
+
+input[type="submit"] {
+	display: block;
+}
+
+input[type="text"] {
+	margin-bottom: 18px;
+	font-size: 20px;
+}
+
+textarea {
+	width: 100%;
+	margin-bottom: 18px;
+	font-size: 20px;
+}
+
+.post-actions {
+	float: right;
+
+	a {
+		display: block;
+		float: left;
+		padding: 0 5px 5px 5px;
+		+ a {
+			margin-left: 20px;
+		}
+	}
+}
