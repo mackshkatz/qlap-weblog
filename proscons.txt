@@ -1,0 +1,40 @@
+AWS/Capistrano
+	Pro - 
+		8.5 cents an hour.
+		Has an API and a command line control interface. Supports most operating systems except linux.
+		Supports all major programming languages.
+
+	Con - Doesn't support linux.
+
+Heroku
+	Pro - 
+		By far easiest/simplest deployment.
+		Eases administrative burden.
+		Command line utilities.
+		A lot of great third-party extensions.
+		Indefinitely free entry fee.
+
+	Con -
+		Not a lot of control over the environment.
+		Not great documentation.
+EngineYard
+	Pro - 
+		Application develpoment platform that is pay as you 	go, pay what you use.
+		Live Chat Support service.
+		More extensive control than Heroku.
+		Provides an extensive dashboard for control.
+		Extensive documentation.
+
+	Con - 
+		11 cents an hour. 
+		No API or command line control interface.
+		Supports almost no operating systems except Linux 		and Windows Server 2008. 
+		The powerful degree of control comes at the expense 	of rapid configuration and deployment.
+		No command line utilities.
+OpDemand
+	Pro -
+		Supports AWS.
+		Library of templates for easy creation of a new 		OpDemand platform.
+		Exposes a simple set of actions for managing 			platform.
+
+	Con -
