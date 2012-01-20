@@ -14,7 +14,7 @@ role :db,  "your slave db-server here"
 ssh_options[:forward_agent] = true
 # Since I was using my own private keys for git, this tells
 # Capistrano to use my local keys instead of keys installed
-# on the server; known was agent forwarding.
+# on the server; known as agent forwarding.
 
 set :deploy_via, :remote_cache
 # Turns on remote caching, which keeps a local git repo
