@@ -37,7 +37,7 @@ AJAX
 
 Putting it all together
 1. 
-	var markUp = $('#main').append('<form action="" method""><input type="text" placeholder="image search" /><input type="button" value="google"></form>');
+	var markUp = $('#main ol:last').after('<form action="" method""><input type="text" placeholder="image search" /><input type="button" value="google"></form>');
 
 2.,3.,4.,5.
 	var input_value = "";
@@ -50,7 +50,8 @@ Putting it all together
 			url: search_string_json,
 			success: function(data) {
 				var img_src = data.responseData.results[0].url;
-				$('#main').append('<div><img src=' + img_src + ' /></div>');
+				$('#main form').after('<div><img src=' + img_src + ' /></div>');
+				console.log(img_src);
 			},
 			dataType: "jsonp"
 		});
