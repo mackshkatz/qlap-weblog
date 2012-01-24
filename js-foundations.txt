@@ -1,0 +1,57 @@
+Selectors
+1. $('h1')
+2. $('#curriculum ul')
+3. $('#curriculum ul').prev('h3')
+
+Manipulating things DOM nodes you've selected
+1. $('h1').css('color', '#8B69B8')
+2, $('li').hide('slow')
+3. $('li').show()
+4. $('#curriculum').append('<div><p>All you touch and all you see, is all your life will ever be.</p></div>')
+5. $('h1').after($('#main h4:eq(1), #main ol:eq(1)'))
+
+Events
+1. $('h1').bind('click', function() {
+     console.log('hello world');
+   });
+2. $('#evented-li').bind("mouseover", function() {
+     alert('get off of me!');
+   });
+3. $('h4').bind('click', function() {
+     $(this).hide(2000);
+   });
+4. $('*').bind('click', function() {
+     console.log($(this)[0].tagName);
+   });
+
+AJAX
+1. 
+	var success = function(data) {
+	  console.log(data[0].text);
+	};
+	$.ajax({
+	  url: 'https://api.twitter.com/1/statuses/user_timeline.json?screen_name=maxjkatz&include_entities=true&count=1',
+	  success: success,
+	  dataType: "jsonp"
+	});
+
+Putting it all together
+1. 
+	var markUp = $('#main').append('<form action="" method""><input type="text" placeholder="image search" /><input type="button" value="google"></form>');
+
+2.,3.,4.,5.
+	var input_value = "";
+	var search_string_json = "";
+	$('input[type="button"]').bind('click', function(event) {
+		event.preventDefault();
+		input_value = $('input[type="text"]').val();
+		search_string_json = "https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=" + input_value;
+		$.ajax({
+			url: search_string_json,
+			success: function(data) {
+				var img_src = data.responseData.results[0].url;
+				$('#main').append('<div><img src=' + img_src + ' /></div>');
+			},
+			dataType: "jsonp"
+		});
+	});
