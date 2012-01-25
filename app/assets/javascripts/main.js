@@ -1,7 +1,11 @@
 $(document).ready(function() {
-	init()
+	init();
 });
 
 function init() {
+	openView();
+}
 
+function openView() {
+	$('.content').fadeIn('slow')
 }
