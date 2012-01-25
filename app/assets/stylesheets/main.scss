@@ -28,10 +28,13 @@ h2 {
 
 header {
 	overflow: hidden;
+	position: relative;
 	h1 {
 		float: left;
 		font-size: 38px;
 		-webkit-transform: rotate(-10deg);
+		position: relative;
+		top: 0;
 	}
 	nav {
 		float: right;

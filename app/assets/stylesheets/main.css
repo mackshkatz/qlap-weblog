@@ -22,11 +22,14 @@ h2 {
   margin: 0 auto; }
 
 header {
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   header h1 {
     float: left;
     font-size: 38px;
-    -webkit-transform: rotate(-10deg); }
+    -webkit-transform: rotate(-10deg);
+    position: relative;
+    top: 0; }
   header nav {
     float: right; }
     header nav ul {
