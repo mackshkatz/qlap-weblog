@@ -35,7 +35,7 @@ var error = function(error) {
 	console.log(error);
 };
 function lastTweet() {
-	window.setInterval(	
+	setInterval(	
 		$.ajax({
 			url: 'https://api.twitter.com/1/statuses/user_timeline.json?screen_name=maxjkatz&include_entities=true&count=1',
 			success: success,
