@@ -35,12 +35,14 @@ var error = function(error) {
 	console.log(error);
 };
 function lastTweet() {
-	$.ajax({
-		url: 'https://api.twitter.com/1/statuses/user_timeline.json?screen_name=maxjkatz&include_entities=true&count=1',
-		success: success,
-		error: error,
-		dataType: 'jsonp'
-	});
+	window.setInterval(	
+		$.ajax({
+			url: 'https://api.twitter.com/1/statuses/user_timeline.json?screen_name=maxjkatz&include_entities=true&count=1',
+			success: success,
+			error: error,
+			dataType: 'jsonp'
+		}) , 600000
+	);
 }
 
 // my konami code:
